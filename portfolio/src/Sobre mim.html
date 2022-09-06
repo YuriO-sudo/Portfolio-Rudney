@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre mim</title>
+    </head>
+<body>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+    
+<main class="conteudo">
+
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      
+       <div class="myImg">
+       <img id="myImg" src="images/Rudney.jpg" width="300" height="330"> 
+      </div> 
+
+            
+<p>
+           <h3>
+       Me chamo Rudney do Nascimento, resido em Santo André/SP. <br>
+        Sou casado e tenho uma filha de 3 meses.             
+                    <br> <br>
+               
+    Atualmente trabalho numa empresa de tecnologia, 
+    exercendo <br> a função de analista de 
+    controle de qualidade (QA) executando <br> testes em sites.
+        
+    Já atuei também como líder em um time de <br> analistas de controle de qualidade (QA), <br>
+     numa empresa de tecnologia especializada em testes mobile. <br> <br>
+     
+    Tive uma breve experiência em uma indústria de plásticos <br> para construção civil 
+    como consultor de vendas, atendendo carteira <br> ativa de clientes e revendas,
+     e prospecção de novos clientes. <br> <br>
+    
+    Trabalhei durante 7 anos exercendo a função de assistente <br> comercial/marketing 
+    em escritório de Publicidade especializado <br> em mídia exterior e indoor,
+     desenvolvendo propostas e <br>
+    projetos para Agências de Publicidade e anunciantes diretos.     <br> <br>
+
+  </h3>       
+</p>
+        
+      </div>
+    </div>
+  </div>
+   
+<style>
+
+.botao-inicial { 
+    transition-duration: 0.4s;
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+}
+
+.botao-inicial:hover {
+  background:linear-gradient(#3527b3e5, #3529a1, #eceaea);
+    
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+  .botao-centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-left: 200px;
+  }
+
+  body, html {
+  height: 100%;
+}
+
+.body,html {
+  /* The image used */
+  /*background-image: url("images/formacao_academica.jpg");*/
+  background-image: url("images/novofundo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* ao invés de cover da pra por auto tbm */
+}
+
+  h3 {
+    text-align: center;
+    margin-left: 300px; 
+       
+  }
+
+#myImg {
+  margin-left: 680px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  }
+  
+/* daqui pra baixo é o efeito de clicar na foto e abrir em outra página */
+
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+</style>
+
+<div class="botao-centralizado">
+    <button onclick="document.location='index.html'" class="botao-inicial"> Voltar </button>
+  </div>
+
+</main>
+
+<script> /*dar um jeito de separar o javascript do html */
+
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  } 
+
+  </script>
+
+
+</body>
+</html>

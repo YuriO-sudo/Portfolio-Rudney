@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    
+</head>
+<body>
+       
+<style>
+
+.botao-enviar { 
+    margin-top: 50px;
+    margin-left: 630px;
+    text-align: center;
+    transition-duration: 0.4s;
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+}
+
+.botao-enviar:hover {
+  background:linear-gradient(#3527b3e5, #3529a1, #eceaea);
+    
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .botao-voltar { 
+    text-align: center;
+    transition-duration: 0.4s;
+    background-color: #ECD6C4;
+    margin-left: 80px;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+}
+
+.botao-voltar:hover {
+  background:linear-gradient(#3527b3e5, #3529a1, #eceaea);
+    
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .botao-voltar {
+  display: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  }
+
+
+  
+  body, html {
+  height: 100%;
+}
+
+.body,html {
+  /* The image used */
+    background-image: url("images/novofundo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* ao invés de cover da pra por auto tbm */
+}
+
+  .texto-formulario, h2 {
+    text-align: center; 
+    margin-left: 250px;   
+    
+  }
+
+  /*   aqui mexo na estilização dos labels nome, email e telefone   */
+form label {
+  margin-left: 470px;
+  text-align: center; 
+    display:block;
+    font-size: 20px;
+} 
+
+form input {
+    border-radius: 20px;
+    text-align: center; 
+    display: inline-block;
+    margin-left: 650px;
+    padding: 10px 25px;
+    width: 30%;
+   
+}
+
+/*   aqui mexo na estilização Ou entre em contato comigo através das seguintes plataformas  */
+.plataforma {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 450px;
+  }
+
+  a {
+    margin-left: 100px;
+    margin-right: 70px;
+    /*margin-top: 50px;*/
+}
+
+
+</style>
+
+<div class="texto-formulario">
+  <h2>  Peça um orçamento </h2>
+   </div>
+   
+
+   <form>
+    
+  <label for="fname"> <strong> Nome:</strong></label>
+  <input type="text" id="fname" name="fname"><br>
+
+  <label for="fname"><strong> E-mail:</strong></label>
+  <input type="text" id="fname" name="fname"><br>
+
+  <label for="lname"><strong> Telefone:</strong></label>
+  <input type="text" id="lname" name="lname"><br> <br>
+
+  
+</form>
+
+<div class="plataforma">
+  <h3> <strong> Ou entre em contato comigo através das seguintes plataformas </strong> </h3>
+    
+ <a href="https://www.instagram.com/rudnascimento/">
+    <img src="images/logos/instagram-logo.png"  style="width:4em ; height: 4em;">
+    </a>
+
+
+    <a href="https://www.linkedin.com/in/rudney-do-nascimento-b99665b3/">
+      <img src="images/logos/linkedin-logo.png"  style="width:4em ; height: 4em;">
+      </a>
+</div>
+
+
+<button class="botao-enviar"> Enviar </button>
+<button onclick="document.location='index.html'" class="botao-voltar"> Voltar </button>
+
+</main>
+
+
+</body>
+</html>
+
+
+
+
